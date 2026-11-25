@@ -1,5 +1,5 @@
 /* ============================================================
-   StudyFlow  -  design system
+   Dayvup  -  design system
    Night-sky glass, one living orb, a floating dock.
    Themes:   [data-theme="dark|light"]
    Accents:  [data-accent="aurora|sunset|matcha|bubblegum"]
@@ -1013,3 +1013,5 @@ body.zen .orb-wrap-lg { width: min(84vh, 92vw); }
 .companion.bump { animation: companionBump .6s cubic-bezier(.3, 1.6, .4, 1); }
 @keyframes companionBump { 30% { transform: translateY(-14px) scale(1.06); } 100% { transform: translateY(0) scale(1); } }
 @media (prefers-reduced-motion: reduce) { .companion.bump { animation: none; } }
+/* Dayvup brand mark; the original focus orb remains unchanged. */
+.brand-mark{background: url("flow-icon.svg") center/contain no-repeat !important;box-shadow:none !important;}

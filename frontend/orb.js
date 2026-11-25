@@ -1,5 +1,5 @@
 /* ============================================================
-   orb.js  -  StudyFlow's 3D engine (raw WebGL, zero dependencies)
+   orb.js  -  Dayvup's 3D engine (raw WebGL, zero dependencies)
 
    Exposes window.SFOrb:
      SFOrb.orb(canvas, opts)      -> the glowing "Flow Orb" (a shader-drawn glass sphere)

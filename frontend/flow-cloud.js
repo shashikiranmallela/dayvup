@@ -11,5 +11,5 @@
       window.firebaseAuth=firebase.auth();window.firestore=firebase.firestore();
     }
     window.dispatchEvent(new Event('flow-cloud-ready'));
-  }catch(e){console.warn('StudyFlow cloud unavailable; local workspace remains available.',e);}
+  }catch(e){console.warn('Dayvup cloud unavailable; local workspace remains available.',e);}
 })();

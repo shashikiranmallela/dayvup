@@ -1,5 +1,5 @@
 /* ============================================================
-   script.js  -  StudyFlow app logic
+   script.js  -  Dayvup app logic
 
    Data keys (same shapes as before, so existing cloud data keeps working):
      todos         [{ id, text, completed, createdAt, completedAt }]
@@ -693,7 +693,7 @@
     $('#breakBtnText').textContent = ts.isBreak ? 'Back to focus' : 'Take a break instead';
     $('#taskInput').disabled = running;
 
-    document.title = running ? txt + ' | StudyFlow' : 'StudyFlow';
+    document.title = running ? txt + ' | Dayvup' : 'Dayvup';
     orbStateSync();
   }
   let lastOrbState = '';

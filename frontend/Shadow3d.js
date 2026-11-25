@@ -1,5 +1,5 @@
 /* ============================================================
-   shadow3d.js  -  StudyFlow's real-3D pet companion (Three.js r128)
+   shadow3d.js  -  Dayvup's real-3D pet companion (Three.js r128)
 
    A dog that follows your cursor on every page:
      click empty space   throws a ball - he runs, grabs it, brings it back

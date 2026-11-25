@@ -1,5 +1,5 @@
 """
-StudyFlow backend (optional).
+Dayvup backend (optional).
 
 The website talks to Firebase (Auth + Firestore) directly from the browser,
 so this service no longer has any job to do besides answering health checks.
@@ -20,7 +20,7 @@ CORS(app)
 
 @app.route("/")
 def home():
-    return jsonify({"message": "Study Flow Backend Running"}), 200
+    return jsonify({"message": "Dayvup Backend Running"}), 200
 
 
 @app.route("/health")
