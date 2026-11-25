@@ -330,7 +330,7 @@
         await firebase.auth().signOut();
       }
     } catch (e) { console.warn('logout', e); }
-    try { localStorage.clear(); } catch (e) { /* ignore */ }
+    try { ['todos','routine','timeSessions','timerState','currentStatsPeriod','theme','username','settings','__dataOwner'].forEach(k => localStorage.removeItem(k)); } catch (e) { /* ignore */ }
     location.hash = '';
     location.reload();
   }

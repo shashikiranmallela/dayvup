@@ -1,0 +1,10 @@
+// Add this match INSIDE your EXISTING match /databases/{database}/documents block.
+// Do not replace existing rules, including your classic users/{uid} rules.
+// Review all overlapping wildcard rules; Firestore grants access if ANY rule allows it.
+match /studyflowWorkspaces/{userId} {
+  allow read, delete: if request.auth != null && request.auth.uid == userId;
+  allow create, update: if request.auth != null && request.auth.uid == userId
+    && request.resource.data.keys().hasOnly(['workspace'])
+    && request.resource.data.workspace is map
+    && request.resource.data.workspace.version == 2;
+}
